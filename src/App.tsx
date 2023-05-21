@@ -4,9 +4,11 @@ import { Authenticator, FirebaseCMSApp } from "firecms";
 import "typeface-rubik";
 import "@fontsource/ibm-plex-mono";
 import { blogCollection } from "./blogCollection";
+
 import logo from "./assets/logo-small.png";
 
 const firebaseConfig = {
+  // @ts-ignore
   apiKey: import.meta.env.VITE_FIREBASE_API_KEY,
   authDomain: "dobro-powraca.firebaseapp.com",
   projectId: "dobro-powraca",
