@@ -5,6 +5,7 @@ import "typeface-rubik";
 import "@fontsource/ibm-plex-mono";
 import { blogCollection } from "./blogCollection";
 
+// @ts-ignore
 import logo from "./assets/logo-small.png";
 
 const firebaseConfig = {
