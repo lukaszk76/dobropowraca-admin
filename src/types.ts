@@ -17,4 +17,10 @@ export type BlogEntry = {
   status: string;
   flagged: boolean;
   content: (BlogEntryImages | BlogEntryText)[];
+  tags: Tag[];
+};
+
+export type Tag = {
+  tag: string;
+  color: string;
 };

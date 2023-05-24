@@ -98,5 +98,14 @@ export const blogCollection = buildCollection<BlogEntry>({
       dataType: "date",
       autoValue: "on_update",
     }),
+    tags: buildProperty({
+      dataType: "array",
+      name: "Tagi",
+      of: buildProperty({
+        dataType: "reference",
+        description: "Wybierz tagi, które mają być przypisane do wpisu.",
+        path: "tags",
+      }),
+    }),
   },
 });
