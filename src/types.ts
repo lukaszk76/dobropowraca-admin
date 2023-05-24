@@ -13,6 +13,7 @@ export type BlogEntry = {
   header_image: string;
   created_on: Date;
   modified_on: Date;
+  date: Date;
   status: string;
   flagged: boolean;
   content: (BlogEntryImages | BlogEntryText)[];

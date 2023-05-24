@@ -83,6 +83,11 @@ export const blogCollection = buildCollection<BlogEntry>({
       },
       defaultValue: "draft",
     })),
+    date: buildProperty({
+      name: "Data",
+      validation: { required: false },
+      dataType: "date",
+    }),
     created_on: buildProperty({
       name: "Data utworzenia",
       dataType: "date",
