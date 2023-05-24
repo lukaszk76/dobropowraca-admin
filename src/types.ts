@@ -15,7 +15,6 @@ export type BlogEntry = {
   modified_on: Date;
   date: Date;
   status: string;
-  flagged: boolean;
   content: (BlogEntryImages | BlogEntryText)[];
   tags: Tag[];
 };

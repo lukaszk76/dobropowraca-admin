@@ -24,13 +24,6 @@ export const blogCollection = buildCollection<BlogEntry>({
         },
       },
     }),
-    flagged: buildProperty({
-      name: "Piękne umysły",
-      dataType: "boolean",
-      description:
-        "Zaznacz jeśli wpis ma być oznaczomy tagiem 'Piękne umysły'.",
-      defaultValue: false,
-    }),
     content: buildProperty({
       name: "Treść",
       description: "Tu moższe dodać zdjęcia i tekst",

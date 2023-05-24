@@ -10,7 +10,19 @@ export default function CustomColorTextField({
   return (
     <>
       <FieldDescription property={property} />
-      <SketchPicker color={value} onChangeComplete={(e) => setValue(e.hex)} />
+      <SketchPicker
+        color={value}
+        presetColors={[
+          "#0C0468",
+          "#840032",
+          "#7A6F9B",
+          "#51513D",
+          "#F7B32B",
+          "#086375",
+          "#9E7B9B",
+        ]}
+        onChangeComplete={(e) => setValue(e.hex)}
+      />
     </>
   );
 }
