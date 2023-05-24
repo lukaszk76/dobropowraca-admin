@@ -25,7 +25,7 @@ function App() {
       if (
         ![
           "lukasz.kaczmarek.codedev@gmail.com",
-          ["dobro.powraca.czernichow@gmail.com"],
+          "dobro.powraca.czernichow@gmail.com",
         ].includes(user?.email) ||
         !user?.emailVerified
       ) {
