@@ -76,6 +76,13 @@ export const blogCollection = buildCollection<BlogEntry>({
       },
       defaultValue: "draft",
     })),
+    mainPage: buildProperty({
+      name: "Pokaż na stronie głównej",
+      dataType: "boolean",
+      description:
+        "Zaznacz jeśli informacja o wpisie ma się pokazać na stronie głównej",
+      defaultValue: false,
+    }),
     date: buildProperty({
       name: "Data",
       validation: { required: false },
