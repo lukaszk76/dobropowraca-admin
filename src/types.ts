@@ -8,6 +8,11 @@ export type BlogEntryText = {
   value: string;
 };
 
+export type BlogEntryVideo = {
+  type: "video";
+  value: string;
+};
+
 export type BlogEntry = {
   name: string;
   header_image: string;
@@ -16,7 +21,7 @@ export type BlogEntry = {
   date: Date;
   status: string;
   mainPage: boolean;
-  content: (BlogEntryImages | BlogEntryText)[];
+  content: (BlogEntryImages | BlogEntryText | BlogEntryVideo)[];
   tags: Tag[];
 };
 

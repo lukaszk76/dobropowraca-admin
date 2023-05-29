@@ -58,6 +58,25 @@ export const blogCollection = buildCollection<BlogEntry>({
             name: "Tekst",
             markdown: true,
           }),
+          video: buildProperty({
+            name: "Filmy",
+            singularName: "film",
+            icon: "video",
+            dataType: "array",
+            of: buildProperty({
+              dataType: "string",
+              storage: {
+                mediaType: "video",
+                storagePath: "videos",
+                acceptedFiles: ["video/*"],
+                metadata: {
+                  cacheControl: "max-age=1000000",
+                },
+              },
+            }),
+            description:
+              "Tu możesz dodać jeden lub więcej filmów, które będą wyświetlane we wpisie.",
+          }),
         },
       },
     }),
