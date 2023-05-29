@@ -46,7 +46,24 @@ export const webPagesCollection = buildCollection<WebPage>({
               },
             }),
             description:
-              "Tu możesz dodać jedno lub więcej zdjęć, które będą wyświetlane we wpisie.",
+              "Tu możesz dodać jedno lub więcej zdjęć, które będą wyświetlane na stronie.",
+          }),
+          files: buildProperty({
+            name: "Pliki",
+            singularName: "plik",
+            icon: "file",
+            dataType: "array",
+            of: buildProperty({
+              dataType: "string",
+              storage: {
+                storagePath: "files",
+                metadata: {
+                  cacheControl: "max-age=1000000",
+                },
+              },
+            }),
+            description:
+              "Tu możesz dodać jeden lub więcej plików, które będzie można pobrać ze strony.",
           }),
           text: buildProperty({
             dataType: "string",

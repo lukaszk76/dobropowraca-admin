@@ -13,6 +13,11 @@ export type BlogEntryVideo = {
   value: string;
 };
 
+export type File = {
+  type: "file";
+  value: string;
+};
+
 export type BlogEntry = {
   name: string;
   header_image: string;
@@ -33,7 +38,7 @@ export type Tag = {
 export type WebPage = {
   name: string;
   url: string;
-  content: (BlogEntryImages | BlogEntryText)[];
+  content: (BlogEntryImages | BlogEntryText | File)[];
   meta_description: string;
   meta_title: string;
 };
