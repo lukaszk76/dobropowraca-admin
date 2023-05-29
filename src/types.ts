@@ -24,3 +24,11 @@ export type Tag = {
   tag: string;
   color: string;
 };
+
+export type WebPage = {
+  name: string;
+  url: string;
+  content: (BlogEntryImages | BlogEntryText)[];
+  meta_description: string;
+  meta_title: string;
+};

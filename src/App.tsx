@@ -8,6 +8,7 @@ import { blogCollection } from "./blogCollection";
 // @ts-ignore
 import logo from "./assets/logo-small.png";
 import { tagCollection } from "./tagCollection";
+import { webPagesCollection } from "./webpagesCollection";
 
 const firebaseConfig = {
   // @ts-ignore
@@ -48,7 +49,7 @@ function App() {
     <FirebaseCMSApp
       name={"DOBRO POWRACA - panel administratora"}
       authentication={myAuthenticator}
-      collections={[blogCollection, tagCollection]}
+      collections={[blogCollection, tagCollection, webPagesCollection]}
       firebaseConfig={firebaseConfig}
       logo={logo}
     />
